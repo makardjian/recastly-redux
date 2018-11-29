@@ -9,7 +9,7 @@ var videoListReducer = (state = [], action) => {
     return currentState;
   }
   
-  return null;
+  return state;
 };
 
 export default videoListReducer;
