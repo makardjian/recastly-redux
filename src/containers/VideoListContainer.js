@@ -6,17 +6,16 @@ import changeVideoList from '../actions/videoList.js';
 
 
 var mapStateToProps = function (state) { //the most updated state is passed in
-  console.log(state, 'state');
   return { 
     videos: state.videoList
   };
 };
 
 
-var mapDispatchToProps = function(dispatch, props) {
+var mapDispatchToProps = function(dispatch) {
   return {
-    handleVideoListEntryTitleClick: () => {
-      dispatch(changeVideo());
+    handleVideoListEntryTitleClick: (video) => {
+      dispatch(changeVideo(video));
     }
   };
 };

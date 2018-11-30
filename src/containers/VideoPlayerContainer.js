@@ -8,9 +8,7 @@ var mapStateToProps = (state) => {
   };
 };
 
-var mapDispatchToProps = (dispatch) => {
-  return;
-};
+var mapDispatchToProps = (dispatch) => ({});
 
 
 

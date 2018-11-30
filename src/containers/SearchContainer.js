@@ -4,9 +4,7 @@ import { connect } from 'react-redux';
 import handleVideoSearch from '../actions/search.js';
 
 
-var mapStateToProps = function (state, ownProps) {
-  return;
-};
+var mapStateToProps = (state) => ({});
 
 var mapDispatchToProps = (dispatch) => {
   return {
