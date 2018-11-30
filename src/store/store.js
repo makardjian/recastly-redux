@@ -4,6 +4,11 @@ import rootReducer from './../reducers/main.js';
 
 // TODO:  Create your redux store, apply thunk as a middleware, and export it!
 
-var store = createStore(rootReducer, applyMiddleware(thunk))
+var store = createStore(rootReducer, applyMiddleware(thunk));
+
+console.log(store.getState(), 'store');
 
 export default store;
+
+
+//how are properties set on store.state? When does this happen?
